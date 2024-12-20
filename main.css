@@ -56,7 +56,7 @@
   width: 179px;
   height: 53px;
 }
-.button button {
+.button a {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 900;
@@ -66,6 +66,7 @@
   border-radius: 7px;
   background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
   border: none;
+  margin-top: 48px;
 }
 .img1 {
   display: none;
@@ -259,9 +260,6 @@
   text-align: center;
   padding: 63px 44px;
 }
-.p1 {
-  display: none;
-}
 .coment1 img:nth-child(1) {
   position: absolute;
   left: 140px;
@@ -354,6 +352,76 @@ footer {
   font-weight: 300;
   line-height: 9px;
   margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1180.27px;
+  height: 430px;
+  box-shadow: 0px 0px 35px 10px #d4145a40;
+  border-radius: 10px;
+}
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+}
+.p4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  text-align: center;
+  margin: 40px 0px;
+}
+.form {
+  display: grid;
+  grid-template-areas:
+    "input1 input2"
+    "input3 input3";
+  justify-content: center;
+  grid-gap: 17px;
+}
+.input1 {
+  width: 362.49px;
+  height: 50.72px;
+  border-radius: 9px;
+  border: 1px solid #a1a1a1;
+  padding: 13px 190px 13px 20px;
+  grid-area: input1;
+}
+.input2 {
+  width: 362.49px;
+  height: 50.72px;
+  border-radius: 9px;
+  border: 1px solid #a1a1a1;
+  padding: 13px 190px 13px 20px;
+  grid-area: input2;
+}
+.input3 {
+  width: 745px;
+  height: 81.65px;
+  border-radius: 9px;
+  border: 1px solid #a1a1a1;
+  grid-area: input3;
+  padding: 20px 0px 110px 20px;
+}
+.button1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23.44px;
+  color: #ffffff;
+  padding: 15px 35px;
+  border-radius: 7px;
+  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+  border: none;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 48px;
 }
 @media (max-width: 768px) {
   .flex ul {
@@ -596,6 +664,54 @@ footer {
     margin: 0 auto;
     width: 95%;
   }
+  form {
+    width: 635px;
+    height: 401px;
+    border: 1px;
+  }
+  .p4 {
+    margin: 30px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: center;
+  }
+  .form {
+    display: grid;
+    grid-template-areas:
+      "input1"
+      "input2"
+      "input3";
+    justify-content: center;
+    grid-gap: 17px;
+  }
+  .input1 {
+    width: 432px;
+    height: 41px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+  }
+  .input2 {
+    width: 432px;
+    height: 41px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+  }
+  .input3 {
+    width: 432px;
+    height: 95px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+    grid-area: input3;
+    padding: 20px 0px 80px 20px;
+  }
+  .button1 {
+    margin-top: 20px;
+  }
+  .second {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 320px) {
   .flex {
@@ -648,7 +764,7 @@ footer {
     width: 93px;
     height: 28px;
   }
-  .button button {
+  .button a {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     font-weight: 900;
@@ -872,5 +988,57 @@ footer {
   .container2 ul {
     align-items: center;
     display: flex;
+  }
+  form {
+    width: 300px;
+    height: 401px;
+  }
+  .form {
+    display: grid;
+    grid-template-areas:
+      "input1"
+      "input2"
+      "input3";
+    justify-content: center;
+    grid-gap: 17px;
+  }
+  .input1 {
+    width: 250px;
+    height: 41px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+    grid-area: input1;
+    padding: 1px 1px 1px 5px;
+  }
+  .input2 {
+    width: 250px;
+    height: 41px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+    grid-area: input2;
+    padding: 1px 1px 1px 5px;
+  }
+  .input3 {
+    width: 250px;
+    height: 95px;
+    border-radius: 9px;
+    border: 1px solid #a1a1a1;
+    grid-area: input3;
+    padding: 1px 1px 60px 5px;
+  }
+  .button1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 23.44px;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 7px;
+    background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+    border: none;
+    margin-top: 48px;
+  }
+  .second {
+    margin-top: 10px;
   }
 }
